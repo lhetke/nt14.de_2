@@ -1,0 +1,29 @@
+.logo {
+	@include outer-container;
+
+	img {
+		@include span-columns(3);
+
+	}
+}
+
+.navigation {
+	@include outer-container;
+}
+
+.content {
+	@include outer-container;
+
+	.einleitung {
+		@include span-columns(12);
+	}
+
+	.news {
+		@include span-columns(8);
+	}
+
+	.termine {
+		@include span-columns(4);
+	}
+}
+
