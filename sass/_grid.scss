@@ -9,6 +9,10 @@
 
 .navigation {
 	@include outer-container;
+
+	ul {
+		@include span-columns(12);
+	}
 }
 
 .content {
@@ -19,6 +23,10 @@
 	}
 
 	.news {
+		@include span-columns(8);
+	}
+
+	.themen {
 		@include span-columns(8);
 	}
 

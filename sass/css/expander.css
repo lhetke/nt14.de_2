@@ -1,18 +1,23 @@
 /*
-Error: Undefined mixin 'margin'.
-        on line 4 of /Applications/MAMP/htdocs/nt14.de_2/sass/modules/news.scss, in `margin'
-        from line 4 of /Applications/MAMP/htdocs/nt14.de_2/sass/modules/news.scss
+Error: Undefined mixin 'user-select'.
+        on line 17 of /Applications/MAMP/htdocs/nt14.de_2/sass/modules/expander.scss, in `user-select'
+        from line 17 of /Applications/MAMP/htdocs/nt14.de_2/sass/modules/expander.scss
 
-1: .news {
-2: 
-3: 	article {
-4: 		@include margin(0 0 3em 0);
-5: 	}
-6: }
+12:   $expander-toggle-margin: 1em;
+13: 
+14:   width: 60%;
+15: 
+16:   .expander-trigger {
+17:     @include user-select(none);
+18:     border-bottom: 1px solid $light-gray;
+19:     color: $action-color;
+20:     cursor: pointer;
+21:     display: block;
+22:     font-size: $expander-toggle-size;
 
 Backtrace:
-/Applications/MAMP/htdocs/nt14.de_2/sass/modules/news.scss:4:in `margin'
-/Applications/MAMP/htdocs/nt14.de_2/sass/modules/news.scss:4
+/Applications/MAMP/htdocs/nt14.de_2/sass/modules/expander.scss:17:in `user-select'
+/Applications/MAMP/htdocs/nt14.de_2/sass/modules/expander.scss:17
 /Applications/+Web Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
 /Applications/+Web Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:98:in `block in with_mixin'
 /Applications/+Web Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
@@ -59,8 +64,8 @@ Backtrace:
 /Applications/+Web Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:8:in `visit'
 /Applications/+Web Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:36:in `css_tree'
 /Applications/+Web Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:20:in `render'
-/Applications/+Web Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:268:in `render'
-/Applications/+Web Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:415:in `run'
+/Applications/+Web Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:278:in `render'
+/Applications/+Web Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:418:in `run'
 /Applications/+Web Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:63:in `process_result'
 /Applications/+Web Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:52:in `parse'
 /Applications/+Web Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:19:in `parse!'
@@ -69,4 +74,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'margin'.\A         on line 4 of /Applications/MAMP/htdocs/nt14.de_2/sass/modules/news.scss, in `margin'\A         from line 4 of /Applications/MAMP/htdocs/nt14.de_2/sass/modules/news.scss\A \A 1: .news {\A 2: \A 3: 	article {\A 4: 		@include margin(0 0 3em 0);\A 5: 	}\A 6: }"; }
+  content: "Error: Undefined mixin 'user-select'.\A         on line 17 of /Applications/MAMP/htdocs/nt14.de_2/sass/modules/expander.scss, in `user-select'\A         from line 17 of /Applications/MAMP/htdocs/nt14.de_2/sass/modules/expander.scss\A \A 12:   $expander-toggle-margin: 1em;\A 13: \A 14:   width: 60%;\A 15: \A 16:   .expander-trigger {\A 17:     @include user-select(none);\A 18:     border-bottom: 1px solid $light-gray;\A 19:     color: $action-color;\A 20:     cursor: pointer;\A 21:     display: block;\A 22:     font-size: $expander-toggle-size;"; }
